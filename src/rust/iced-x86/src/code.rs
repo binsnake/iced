@@ -16,7 +16,6 @@ use core::{fmt, mem};
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[cfg_attr(not(feature = "exhaustive_enums"), non_exhaustive)]
 #[allow(non_camel_case_types)]
-#[repr(C)]
 pub enum Code {
 	/// It's an invalid instruction, eg. it's a new unknown instruction, garbage or there's not enough bytes to decode the instruction etc.
 	INVALID = 0,

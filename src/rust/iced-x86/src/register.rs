@@ -937,7 +937,6 @@ impl Register {
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[cfg_attr(not(feature = "exhaustive_enums"), non_exhaustive)]
 #[allow(missing_docs)]
-#[repr(C)]
 pub enum Register {
 	None = 0,
 	AL = 1,

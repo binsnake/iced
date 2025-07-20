@@ -296,7 +296,6 @@ const _: () = {
 /// Instruction operand kind
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[allow(non_camel_case_types)]
-#[repr(C)]
 pub enum OpKind {
 	/// A register ([`Register`]).
 	///
@@ -3238,7 +3237,6 @@ const _: () = {
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[allow(non_camel_case_types)]
 #[allow(dead_code)]
-#[repr(C)]
 pub(crate) enum InstrScale {
 	Scale1 = 0,
 	Scale2 = 1,
