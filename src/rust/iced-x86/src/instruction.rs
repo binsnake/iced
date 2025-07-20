@@ -54,6 +54,7 @@ impl MvexInstrFlags {
 /// [`CodeAssembler`]: code_asm/struct.CodeAssembler.html
 /// [`Decoder`]: struct.Decoder.html
 #[derive(Debug, Default, Copy, Clone)]
+#[repr(C)]
 pub struct Instruction {
 	pub(crate) next_rip: u64,
 	pub(crate) mem_displ: u64,
